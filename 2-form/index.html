@@ -4,39 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Регистрация</h1>
-    <div>
-      <span>У вас уже есть аккаунт?</span>
-      <a href="/sign-in">Войти</a>
-    </div>
-
-    <form>
-      <input
-        type="text"
-        name="company_name"
-        placeholder="Название компании"
-        required
-      />
-
+    <section>
+      <h1>Регистрация</h1>
       <div>
-        <input type="text" name="first_name" placeholder="Имя" required />
-        <input type="text" name="second_name" placeholder="Фамилия" required />
+        <span>У вас уже есть аккаунт?</span>
+        <a href="/sign-in">Войти</a>
       </div>
 
-      <input type="email" name="email" placeholder="E-mail" required />
+      <form>
+        <input
+          type="text"
+          name="company_name"
+          placeholder="Название компании"
+          required
+        />
 
-      <button type="submit">Зарегестрироваться</button>
+        <div>
+          <input type="text" name="first_name" placeholder="Имя" required />
+          <input
+            type="text"
+            name="second_name"
+            placeholder="Фамилия"
+            required
+          />
+        </div>
 
-      <div>
-        <label>
-          <input type="checkbox" name="rules" />
-          Я прочитал и принимаю
-        </label>
+        <input type="email" name="email" placeholder="E-mail" required />
 
-        <a href="/rules">Условия использования</a>
-      </div>
-    </form>
+        <button type="submit">Зарегестрироваться</button>
+
+        <div>
+          <label>
+            <input type="checkbox" name="rules" />
+            <span class="label-rules"> Я прочитал и принимаю </span>
+          </label>
+
+          <a class="link-rules" href="/rules">Условия использования</a>
+        </div>
+      </form>
+    </section>
   </body>
 </html>
